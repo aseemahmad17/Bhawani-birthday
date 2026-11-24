@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f9e9ee">
+<title>A Little World of Bhawani</title>
+<style>
+:root{--pink:#f9e9ee;--rose:#d99aaa;--deep:#704052;--gold:#b38b57;--cream:#fffaf7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pink);color:var(--deep);font-family:Georgia,"Times New Roman",serif}
+main{max-width:760px;margin:auto;padding:18px 14px 50px}
+section{background:var(--cream);border:1px solid #f0d7df;border-radius:24px;padding:28px 20px;margin:16px 0;box-shadow:0 10px 28px #89576b12;text-align:center}
+.eyebrow{font:600 11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#a66b7d}
+h1{font-size:clamp(38px,10vw,66px);line-height:1.04;margin:12px 0;color:var(--deep);font-weight:normal}
+h2{font-size:clamp(28px,7vw,42px);font-weight:normal;margin:8px 0 14px}
+h3{font-size:23px;font-weight:normal;margin:8px 0}
+p{font-size:17px;line-height:1.75;margin:12px auto;max-width:580px}
+.script{font-style:italic;color:#a66b7d}
+button{border:0;border-radius:999px;padding:14px 23px;background:#e8b7c6;color:#704052;font-weight:bold;letter-spacing:1px;font-size:12px;cursor:pointer;margin-top:12px}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.hero{padding:44px 20px;background:linear-gradient(145deg,#fffaf7,#f8e0e8)}
+.flower{font-size:34px;margin:14px 0}.divider{color:#c99aa8;letter-spacing:8px;margin:18px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.photo{background:white;padding:9px 9px 22px;box-shadow:0 5px 18px #70405218;transform:rotate(-1deg);min-width:0}
+.photo:nth-child(even){transform:rotate(1.5deg)}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block;background:#f4e4e8;border-radius:2px}
+.photo small{display:block;margin-top:9px;color:#956879;font-style:italic;font-size:13px}
+.letter{text-align:left;background:#fffdfb;padding:22px;border:1px solid #f1dfe4;border-radius:16px}
+.gifts{display:grid;grid-template-columns:1fr;gap:12px;margin-top:18px}
+.gift{background:#fff7f8;border:1px solid #efd6df;border-radius:18px;padding:18px}
+.gift button{margin-top:7px}.reveal{display:none;margin:12px auto 0;padding:12px;background:#fff;border-radius:12px;line-height:1.6;max-width:480px}
+.reveal.show{display:block}.footer{font:12px Arial,sans-serif;color:#a77b89;letter-spacing:1px}
+@media(min-width:560px){.gifts{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:no-preference){.hero{animation:fade .9s ease both}@keyframes fade{from{opacity:.3;transform:translateY(10px)}to{opacity:1;transform:none}}}
+</style></head><body><main>
+<section class="hero" id="top"><div class="eyebrow">A little surprise for you</div><div class="flower">🌷 ✨ 🌷</div>
+<h1>Hey, Bhawani!</h1><p class="script">Someone made a little something just for you...</p>
+<p>Ready to open your birthday surprise?</p><button onclick="document.getElementById('birthday').scrollIntoView({behavior:'smooth'})">OPEN YOUR SURPRISE ♡</button></section>
+<section id="birthday"><div class="eyebrow">Today is all about you</div><h1>Happy Birthday!</h1><h2 class="script">Bhawani Rana</h2>
+<div class="flower">🎂 🌸 🎀</div><h3>26 November</h3>
+<p>May your smile stay bright and your days become as beautiful as the dreams you carry. I hope this year brings you countless reasons to feel happy, proud and loved.</p><div class="divider">✧ ✧ ✧</div></section>
+<section id="gallery"><div class="eyebrow">A little photo corner</div><h2>A few frames, a thousand smiles</h2>
+<p>Some moments deserve their own little place.</p><div class="gallery">
+<div class="photo"><img src="photos/bhawani-1.jpg" alt="Bhawani photo 1"><small>A lovely moment ♡</small></div>
+<div class="photo"><img src="photos/bhawani-2.jpg" alt="Bhawani photo 2"><small>A little sunshine</small></div>
+<div class="photo"><img src="photos/bhawani-3.jpg" alt="Bhawani photo 3"><small>Keep shining ✨</small></div>
+<div class="photo"><img src="photos/bhawani-4.jpg" alt="Bhawani photo 4"><small>Just being you</small></div>
+<div class="photo"><img src="photos/bhawani-5.jpg" alt="Bhawani photo 5"><small>A moment to remember</small></div>
+<div class="photo"><img src="photos/bhawani-6.jpg" alt="Bhawani photo 6"><small>Simply Bhawani 🌷</small></div>
+</div></section>
+<section id="letter"><div class="eyebrow">A note from Aseem</div><h2>A little letter</h2><div class="letter">
+<p>Dear Bhawani,</p><p>First of all, a very happy birthday to you! ❤️</p>
+<p>I don't know if I say this often enough, but I'm genuinely glad that we became friends.</p>
+<p>There's something special about people who can make an ordinary day feel a little brighter just by being themselves. And you have that quality.</p>
+<p>On your birthday, I wish you all the happiness in the world. May you achieve everything you've been dreaming of, meet wonderful people, make unforgettable memories and always have reasons to smile.</p>
+<p>Never stop being the person you are.</p>
+<p>And there's one little thing I wanted to say: some people become a little more special than they probably realise. Maybe you're one of those people. :)</p>
+<p>With lots of good wishes,<br><strong>Aseem</strong> 🌷</p></div></section>
+<section id="gifts"><div class="eyebrow">Just for you</div><h2>Three little gifts</h2><p>Tap each gift to open it.</p><div class="gifts">
+<div class="gift"><div class="flower">🌸</div><h3>A bouquet for you</h3><button onclick="toggleGift('g1')">OPEN GIFT</button><div class="reveal" id="g1">May your life always bloom with happiness, kindness and beautiful surprises.</div></div>
+<div class="gift"><div class="flower">⭐</div><h3>Five wishes</h3><button onclick="toggleGift('g2')">OPEN GIFT</button><div class="reveal" id="g2">Happiness. Success. Confidence. Adventures. Beautiful memories. May all five find their way to you.</div></div>
+<div class="gift"><div class="flower">💌</div><h3>A little secret</h3><button onclick="toggleGift('g3')">OPEN GIFT</button><div class="reveal" id="g3">Some smiles stay in someone's mind longer than expected. Yours might just be one of them. :)</div></div>
+</div></section>
+<section id="last"><div class="flower">🌙 ✨ 🌷</div><div class="eyebrow">One last thing...</div>
+<h2 class="script">Keep smiling, Bhawani.</h2><p>The world needs more smiles like yours. And honestly, yours is one I wouldn't mind seeing more often. ❤️</p>
+<div class="divider">✧ ✧ ✧</div><h3>— Aseem</h3><p class="footer">MADE WITH WARM WISHES · 26 NOVEMBER</p>
+<button onclick="document.getElementById('top').scrollIntoView({behavior:'smooth'})">BACK TO THE BEGINNING ↑</button></section>
+</main><script>function toggleGift(id){document.getElementById(id).classList.toggle('show')}</script></body></html>
