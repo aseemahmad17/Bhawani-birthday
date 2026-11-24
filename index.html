@@ -1,68 +1,643 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f9e9ee">
 <title>A Little World of Bhawani</title>
+
 <style>
-:root{--pink:#f9e9ee;--rose:#d99aaa;--deep:#704052;--gold:#b38b57;--cream:#fffaf7}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--pink);color:var(--deep);font-family:Georgia,"Times New Roman",serif}
-main{max-width:760px;margin:auto;padding:18px 14px 50px}
-section{background:var(--cream);border:1px solid #f0d7df;border-radius:24px;padding:28px 20px;margin:16px 0;box-shadow:0 10px 28px #89576b12;text-align:center}
-.eyebrow{font:600 11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#a66b7d}
-h1{font-size:clamp(38px,10vw,66px);line-height:1.04;margin:12px 0;color:var(--deep);font-weight:normal}
-h2{font-size:clamp(28px,7vw,42px);font-weight:normal;margin:8px 0 14px}
-h3{font-size:23px;font-weight:normal;margin:8px 0}
-p{font-size:17px;line-height:1.75;margin:12px auto;max-width:580px}
-.script{font-style:italic;color:#a66b7d}
-button{border:0;border-radius:999px;padding:14px 23px;background:#e8b7c6;color:#704052;font-weight:bold;letter-spacing:1px;font-size:12px;cursor:pointer;margin-top:12px}
-button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.hero{padding:44px 20px;background:linear-gradient(145deg,#fffaf7,#f8e0e8)}
-.flower{font-size:34px;margin:14px 0}.divider{color:#c99aa8;letter-spacing:8px;margin:18px}
-.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
-.photo{background:white;padding:9px 9px 22px;box-shadow:0 5px 18px #70405218;transform:rotate(-1deg);min-width:0}
-.photo:nth-child(even){transform:rotate(1.5deg)}
-.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block;background:#f4e4e8;border-radius:2px}
-.photo small{display:block;margin-top:9px;color:#956879;font-style:italic;font-size:13px}
-.letter{text-align:left;background:#fffdfb;padding:22px;border:1px solid #f1dfe4;border-radius:16px}
-.gifts{display:grid;grid-template-columns:1fr;gap:12px;margin-top:18px}
-.gift{background:#fff7f8;border:1px solid #efd6df;border-radius:18px;padding:18px}
-.gift button{margin-top:7px}.reveal{display:none;margin:12px auto 0;padding:12px;background:#fff;border-radius:12px;line-height:1.6;max-width:480px}
-.reveal.show{display:block}.footer{font:12px Arial,sans-serif;color:#a77b89;letter-spacing:1px}
-@media(min-width:560px){.gifts{grid-template-columns:repeat(3,1fr)}}
-@media(prefers-reduced-motion:no-preference){.hero{animation:fade .9s ease both}@keyframes fade{from{opacity:.3;transform:translateY(10px)}to{opacity:1;transform:none}}}
-</style></head><body><main>
-<section class="hero" id="top"><div class="eyebrow">A little surprise for you</div><div class="flower">🌷 ✨ 🌷</div>
-<h1>Hey, Bhawani!</h1><p class="script">Someone made a little something just for you...</p>
-<p>Ready to open your birthday surprise?</p><button onclick="document.getElementById('birthday').scrollIntoView({behavior:'smooth'})">OPEN YOUR SURPRISE ♡</button></section>
-<section id="birthday"><div class="eyebrow">Today is all about you</div><h1>Happy Birthday!</h1><h2 class="script">Bhawani Rana</h2>
-<div class="flower">🎂 🌸 🎀</div><h3>26 November</h3>
-<p>May your smile stay bright and your days become as beautiful as the dreams you carry. I hope this year brings you countless reasons to feel happy, proud and loved.</p><div class="divider">✧ ✧ ✧</div></section>
-<section id="gallery"><div class="eyebrow">A little photo corner</div><h2>A few frames, a thousand smiles</h2>
-<p>Some moments deserve their own little place.</p><div class="gallery">
-<div class="photo"><img src="photos/bhawani-1.jpg" alt="Bhawani photo 1"><small>A lovely moment ♡</small></div>
-<div class="photo"><img src="photos/bhawani-2.jpg" alt="Bhawani photo 2"><small>A little sunshine</small></div>
-<div class="photo"><img src="photos/bhawani-3.jpg" alt="Bhawani photo 3"><small>Keep shining ✨</small></div>
-<div class="photo"><img src="photos/bhawani-4.jpg" alt="Bhawani photo 4"><small>Just being you</small></div>
-<div class="photo"><img src="photos/bhawani-5.jpg" alt="Bhawani photo 5"><small>A moment to remember</small></div>
-<div class="photo"><img src="photos/bhawani-6.jpg" alt="Bhawani photo 6"><small>Simply Bhawani 🌷</small></div>
-</div></section>
-<section id="letter"><div class="eyebrow">A note from Aseem</div><h2>A little letter</h2><div class="letter">
-<p>Dear Bhawani,</p><p>First of all, a very happy birthday to you! ❤️</p>
-<p>I don't know if I say this often enough, but I'm genuinely glad that we became friends.</p>
-<p>There's something special about people who can make an ordinary day feel a little brighter just by being themselves. And you have that quality.</p>
-<p>On your birthday, I wish you all the happiness in the world. May you achieve everything you've been dreaming of, meet wonderful people, make unforgettable memories and always have reasons to smile.</p>
-<p>Never stop being the person you are.</p>
-<p>And there's one little thing I wanted to say: some people become a little more special than they probably realise. Maybe you're one of those people. :)</p>
-<p>With lots of good wishes,<br><strong>Aseem</strong> 🌷</p></div></section>
-<section id="gifts"><div class="eyebrow">Just for you</div><h2>Three little gifts</h2><p>Tap each gift to open it.</p><div class="gifts">
-<div class="gift"><div class="flower">🌸</div><h3>A bouquet for you</h3><button onclick="toggleGift('g1')">OPEN GIFT</button><div class="reveal" id="g1">May your life always bloom with happiness, kindness and beautiful surprises.</div></div>
-<div class="gift"><div class="flower">⭐</div><h3>Five wishes</h3><button onclick="toggleGift('g2')">OPEN GIFT</button><div class="reveal" id="g2">Happiness. Success. Confidence. Adventures. Beautiful memories. May all five find their way to you.</div></div>
-<div class="gift"><div class="flower">💌</div><h3>A little secret</h3><button onclick="toggleGift('g3')">OPEN GIFT</button><div class="reveal" id="g3">Some smiles stay in someone's mind longer than expected. Yours might just be one of them. :)</div></div>
-</div></section>
-<section id="last"><div class="flower">🌙 ✨ 🌷</div><div class="eyebrow">One last thing...</div>
-<h2 class="script">Keep smiling, Bhawani.</h2><p>The world needs more smiles like yours. And honestly, yours is one I wouldn't mind seeing more often. ❤️</p>
-<div class="divider">✧ ✧ ✧</div><h3>— Aseem</h3><p class="footer">MADE WITH WARM WISHES · 26 NOVEMBER</p>
-<button onclick="document.getElementById('top').scrollIntoView({behavior:'smooth'})">BACK TO THE BEGINNING ↑</button></section>
-</main><script>function toggleGift(id){document.getElementById(id).classList.toggle('show')}</script></body></html>
+:root {
+  --pink: #f9e9ee;
+  --rose: #d99aaa;
+  --deep: #704052;
+  --gold: #b38b57;
+  --cream: #fffaf7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9e9ee, #fff4ed, #f7e1e9);
+  color: var(--deep);
+  font-family: Georgia, "Times New Roman", serif;
+  overflow-x: hidden;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 28px 18px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: pageIn .65s ease both;
+}
+
+.page.active {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  padding: 34px 22px;
+  background: rgba(255,250,247,.94);
+  border: 1px solid #efd6df;
+  border-radius: 26px;
+  box-shadow: 0 12px 35px rgba(112,64,82,.12);
+}
+
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.eyebrow {
+  font: 600 11px Arial, sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #a66b7d;
+}
+
+h1 {
+  font-size: clamp(38px, 10vw, 65px);
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 18px 0;
+}
+
+h2 {
+  font-size: clamp(27px, 7vw, 42px);
+  font-weight: normal;
+  margin: 12px 0;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.script {
+  font-style: italic;
+  color: #a66b7d;
+}
+
+.flower {
+  font-size: 42px;
+  margin: 20px 0;
+}
+
+button {
+  border: 0;
+  border-radius: 30px;
+  padding: 14px 24px;
+  background: #e8b7c6;
+  color: #704052;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: transform .2s, background .2s;
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+button:hover {
+  background: #e2a8ba;
+}
+
+.secondary {
+  background: #f3e3e8;
+}
+
+.navigation {
+  margin-top: 25px;
+}
+
+.divider {
+  color: #c99aa8;
+  letter-spacing: 8px;
+  margin: 22px;
+}
+
+/* Welcome page */
+
+#welcome .content {
+  background:
+    radial-gradient(circle at 10% 15%, #f5d4df 0 5px, transparent 6px),
+    radial-gradient(circle at 90% 20%, #eac5d1 0 7px, transparent 8px),
+    radial-gradient(circle at 15% 85%, #eed1bd 0 6px, transparent 7px),
+    linear-gradient(145deg, #fffaf7, #f8e0e8);
+  padding: 65px 22px;
+}
+
+.open-button {
+  margin-top: 25px;
+  padding: 17px 30px;
+  font-size: 13px;
+  box-shadow: 0 6px 18px #d99aaa55;
+}
+
+/* Birthday reveal */
+
+.envelope-area {
+  margin: 35px auto;
+  width: 190px;
+  height: 135px;
+  position: relative;
+  perspective: 700px;
+}
+
+.envelope {
+  position: absolute;
+  inset: 0;
+  background: #e9b7c7;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px #70405222;
+}
+
+.envelope:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 95px solid transparent;
+  border-right: 95px solid transparent;
+  border-bottom: 78px solid #d99aaa;
+  z-index: 3;
+}
+
+.envelope:after {
+  content: "♡";
+  position: absolute;
+  top: 43px;
+  left: 78px;
+  font-size: 30px;
+  color: white;
+  z-index: 4;
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 95px solid transparent;
+  border-right: 95px solid transparent;
+  border-top: 75px solid #c9879c;
+  transform-origin: top;
+  z-index: 5;
+}
+
+#birthday.opened .flap {
+  animation: openFlap 1s ease forwards;
+}
+
+@keyframes openFlap {
+  to { transform: rotateX(180deg); }
+}
+
+.birthday-message {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+#birthday.opened .birthday-message {
+  animation: revealBirthday 1s ease 1s forwards;
+}
+
+@keyframes revealBirthday {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Photos */
+
+.photo-frame {
+  background: white;
+  padding: 12px 12px 25px;
+  max-width: 370px;
+  margin: 24px auto;
+  box-shadow: 0 8px 24px #70405222;
+  transform: rotate(-1deg);
+}
+
+.photo-frame img {
+  width: 100%;
+  max-height: 58vh;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  background: #f4e4e8;
+}
+
+.photo-caption {
+  margin-top: 15px;
+  font-style: italic;
+  color: #956879;
+}
+
+/* Letter */
+
+.letter {
+  text-align: left;
+  background: #fffdfb;
+  padding: 22px;
+  border: 1px solid #f1dfe4;
+  border-radius: 17px;
+  margin-top: 20px;
+}
+
+.letter p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 13px 0;
+}
+
+/* Gifts */
+
+.gift-graphic {
+  font-size: 85px;
+  margin: 25px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.gift-message {
+  display: none;
+  background: #fff4f6;
+  border: 1px solid #efd6df;
+  border-radius: 18px;
+  padding: 18px;
+  margin: 20px auto;
+  line-height: 1.8;
+  animation: pageIn .6s ease;
+}
+
+.gift-message.show {
+  display: block;
+}
+
+.wishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.wish {
+  background: #fff0f4;
+  border: 1px solid #efd6df;
+  border-radius: 18px;
+  padding: 13px 16px;
+  font-size: 15px;
+}
+
+/* Secret envelope */
+
+.secret-envelope {
+  font-size: 90px;
+  margin: 25px 0;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+}
+
+.footer {
+  font: 11px Arial, sans-serif;
+  color: #a77b89;
+  letter-spacing: 2px;
+  margin-top: 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1: WELCOME -->
+
+<section class="page active" id="welcome">
+  <div class="content">
+    <div class="flower">🌷 ✨ 🌷</div>
+    <button class="open-button" onclick="showPage('birthday')">
+      OPEN YOUR SURPRISE ♡
+    </button>
+  </div>
+</section>
+
+
+<!-- PAGE 2: BIRTHDAY REVEAL -->
+
+<section class="page" id="birthday">
+  <div class="content">
+    <div class="eyebrow">A little surprise for you</div>
+
+    <div class="envelope-area">
+      <div class="envelope"></div>
+      <div class="flap"></div>
+    </div>
+
+    <div class="birthday-message">
+      <div class="flower">🎂 🌸 🎀</div>
+      <h1>Happy 17th Birthday</h1>
+      <h2 class="script">Bhawani</h2>
+      <p>May your smile stay bright and your days be filled with happiness.</p>
+      <div class="divider">✧ ✧ ✧</div>
+      <button onclick="showPage('photo1')">LET'S BEGIN ♡</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- PHOTO 1 -->
+
+<section class="page" id="photo1">
+  <div class="content">
+    <div class="eyebrow">A little photo corner · 1 of 6</div>
+    <h2>A lovely moment</h2>
+    <div class="photo-frame">
+      <img src="photos/bhawani-1.jpg" alt="Bhawani photo 1">
+      <div class="photo-caption">A lovely moment ♡</div>
+    </div>
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('birthday')">PREVIOUS</button>
+      <button onclick="showPage('photo2')">NEXT →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- PHOTO 2 -->
+
+<section class="page" id="photo2">
+  <div class="content">
+    <div class="eyebrow">A little photo corner · 2 of 6</div>
+    <h2>A little sunshine</h2>
+    <div class="photo-frame">
+      <img src="photos/bhawani-2.jpg" alt="Bhawani photo 2">
+      <div class="photo-caption">A little sunshine</div>
+    </div>
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('photo1')">← PREVIOUS</button>
+      <button onclick="showPage('photo3')">NEXT →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- PHOTO 3 -->
+
+<section class="page" id="photo3">
+  <div class="content">
+    <div class="eyebrow">A little photo corner · 3 of 6</div>
+    <h2>Keep shining</h2>
+    <div class="photo-frame">
+      <img src="photos/bhawani-3.jpg" alt="Bhawani photo 3">
+      <div class="photo-caption">Keep shining ✨</div>
+    </div>
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('photo2')">← PREVIOUS</button>
+      <button onclick="showPage('photo4')">NEXT →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- PHOTO 4 -->
+
+<section class="page" id="photo4">
+  <div class="content">
+    <div class="eyebrow">A little photo corner · 4 of 6</div>
+    <h2>Just being you</h2>
+    <div class="photo-frame">
+      <img src="photos/bhawani-4.jpg" alt="Bhawani photo 4">
+      <div class="photo-caption">Just being you</div>
+    </div>
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('photo3')">← PREVIOUS</button>
+      <button onclick="showPage('photo5')">NEXT →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- PHOTO 5 -->
+
+<section class="page" id="photo5">
+  <div class="content">
+    <div class="eyebrow">A little photo corner · 5 of 6</div>
+    <h2>A moment to remember</h2>
+    <div class="photo-frame">
+      <img src="photos/bhawani-5.jpg" alt="Bhawani photo 5">
+      <div class="photo-caption">A moment to remember</div>
+    </div>
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('photo4')">← PREVIOUS</button>
+      <button onclick="showPage('photo6')">NEXT →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- PHOTO 6 -->
+
+<section class="page" id="photo6">
+  <div class="content">
+    <div class="eyebrow">A little photo corner · 6 of 6</div>
+    <h2>Simply Bhawani</h2>
+    <div class="photo-frame">
+      <img src="photos/bhawani-6.jpg" alt="Bhawani photo 6">
+      <div class="photo-caption">Simply Bhawani 🌷</div>
+    </div>
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('photo5')">← PREVIOUS</button>
+      <button onclick="showPage('note')">NEXT →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- BIRTHDAY NOTE -->
+
+<section class="page" id="note">
+  <div class="content">
+    <div class="eyebrow">A note from Aseem</div>
+    <h2>A little letter</h2>
+
+    <div class="letter">
+      <p>Dear Bhawani,</p>
+
+      <p>First of all, a very happy 17th birthday to you! ❤️</p>
+
+      <p>I'm genuinely glad that we became friends. There's something special about people who can make an ordinary day feel a little brighter just by being themselves. And you have that quality.</p>
+
+      <p>On your birthday, I wish you all the happiness in the world. May you achieve your dreams, do well in everything you work for, meet wonderful people and make beautiful memories. Always believe in yourself and never stop being the person you are.</p>
+
+      <p>And honestly, you're a little more special to me than you might realise. I don't know if I say it enough, but your happiness genuinely matters to me. Talking to you and having you in my life is something I truly appreciate. I just hope you always know how much you mean to me. ❤️</p>
+
+      <p>I hope this year brings you lots of happiness, confidence and reasons to smile. Take care of yourself and keep shining.</p>
+
+      <p>With lots of good wishes,<br>
+      <strong>Aseem</strong> 🌷</p>
+    </div>
+
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('photo6')">← PREVIOUS</button>
+      <button onclick="showPage('gift1')">NEXT →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- GIFT 1: BOUQUET -->
+
+<section class="page" id="gift1">
+  <div class="content">
+    <div class="eyebrow">A little gift · 1 of 3</div>
+    <h2>A bouquet for you</h2>
+
+    <div class="gift-graphic">💐</div>
+
+    <button onclick="revealGift('bouquetMessage')">OPEN YOUR GIFT ♡</button>
+
+    <div class="gift-message" id="bouquetMessage">
+      May your life always bloom with happiness, kindness and beautiful surprises. 🌸
+    </div>
+
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('note')">← PREVIOUS</button>
+      <button onclick="showPage('gift2')">NEXT →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- GIFT 2: FIVE WISHES -->
+
+<section class="page" id="gift2">
+  <div class="content">
+    <div class="eyebrow">A little gift · 2 of 3</div>
+    <h2>Five wishes for you</h2>
+
+    <div class="gift-graphic">⭐</div>
+
+    <div class="wishes">
+      <div class="wish">🌸 Happiness</div>
+      <div class="wish">🏆 Success</div>
+      <div class="wish">🦋 Confidence</div>
+      <div class="wish">🌍 Adventures</div>
+      <div class="wish">💖 Beautiful memories</div>
+    </div>
+
+    <p>May all five find their way to you.</p>
+
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('gift1')">← PREVIOUS</button>
+      <button onclick="showPage('gift3')">NEXT →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- GIFT 3: A LITTLE SECRET -->
+
+<section class="page" id="gift3">
+  <div class="content">
+    <div class="eyebrow">A little gift · 3 of 3</div>
+    <h2>A little secret</h2>
+
+    <div class="secret-envelope" onclick="revealGift('secretMessage')">💌</div>
+
+    <p>There's something inside this envelope...</p>
+
+    <button onclick="revealGift('secretMessage')">OPEN THE ENVELOPE</button>
+
+    <div class="gift-message" id="secretMessage">
+      Some smiles stay in someone's mind longer than expected. Yours might just be one of them. :) ❤️
+    </div>
+
+    <div class="navigation">
+      <button class="secondary" onclick="showPage('gift2')">← PREVIOUS</button>
+      <button onclick="showPage('closing')">ONE LAST THING →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- CLOSING PAGE -->
+
+<section class="page" id="closing">
+  <div class="content">
+    <div class="flower">🌙 ✨ 🌷</div>
+
+    <div class="eyebrow">One last thing...</div>
+
+    <h2 class="script">Keep smiling, Bhawani.</h2>
+
+    <p>The world needs more smiles like yours. And honestly, yours is one I wouldn't mind seeing more often. ❤️</p>
+
+    <div class="divider">✧ ✧ ✧</div>
+
+    <h3>— Aseem</h3>
+
+    <p class="footer">MADE WITH WARM WISHES · 26 NOVEMBER</p>
+
+    <button onclick="showPage('welcome')">BACK TO THE BEGINNING ↑</button>
+  </div>
+</section>
+
+
+<script>
+function showPage(id) {
+  document.querySelectorAll(".page").forEach(function(page) {
+    page.classList.remove("active");
+  });
+
+  const nextPage = document.getElementById(id);
+  nextPage.classList.add("active");
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  if (id === "birthday") {
+    nextPage.classList.remove("opened");
+    void nextPage.offsetWidth;
+    setTimeout(function() {
+      nextPage.classList.add("opened");
+    }, 100);
+  }
+}
+
+function revealGift(id) {
+  const message = document.getElementById(id);
+  message.classList.add("show");
+}
+</script>
+
+</body>
+    </html>
+  
